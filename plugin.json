@@ -1,14 +1,14 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "new-relic",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Use New Relic directly in GitHub Copilot through the hosted New Relic MCP server. Query telemetry with NRQL, investigate errors, alerts, and deployments, and explore logs, traces, and dashboards in natural language.",
   "author": {
     "name": "New Relic",
     "url": "https://newrelic.com"
   },
   "homepage": "https://docs.newrelic.com/docs/agentic-ai/mcp/overview/",
-  "repository": "https://github.com/newrelic-partners/copilot-plugin",
+  "repository": "https://github.com/newrelic-partners/Github-Copilot-plugin",
   "license": "Apache-2.0",
   "keywords": [
     "new-relic",
