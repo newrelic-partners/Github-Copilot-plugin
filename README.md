@@ -10,7 +10,7 @@ The plugin connects Copilot to the hosted [New Relic MCP server](https://docs.ne
 
 - **MCP server `newrelic`**: the hosted New Relic MCP server (`https://mcp.newrelic.com/mcp/`), with tools for NRQL, entities, alerts and issues, logs, traces, deployments, synthetics, and dashboards.
 - **Skills**:
-  - `nrsetup`: sign-in, EU/JP regions, access troubleshooting
+  - `nrsetup`: sign-in, US/EU/JP regions, access troubleshooting
   - `nrql`: write and run NRQL safely and efficiently
   - `nrinvestigate`: step-by-step incident and regression investigation
 - **Custom agents** (select one from the agent picker in VS Code, or run `/agent` in the Copilot CLI):
@@ -25,7 +25,7 @@ All agents use the bundled `newrelic` MCP server.
 
 - A New Relic account. MCP is available to all accounts. Some advanced tools need specific user types.
 - Your New Relic administrator must have **New Relic MCP Server** and **Local Clients** enabled in feature control manager. Both are on by default. See [organization access](https://docs.newrelic.com/docs/agentic-ai/mcp/overview/#org-access).
-- VS Code with GitHub Copilot, or the Copilot CLI.
+- VS Code with GitHub Copilot, the Copilot CLI, or the Copilot app.
 
 ## Install
 
@@ -41,12 +41,18 @@ copilot plugin install new-relic@awesome-copilot
 2. Search for `@agentPlugins new-relic`.
 3. Select **New Relic** and click **Install**.
 
+**Copilot app**
+
+1. Click **+ Add** and select **Plugin**.
+2. Search for `new-relic@awesome-copilot` and install it.
+
 ## Connect
 
 The plugin uses OAuth, so you don't need an API key.
 
 - **VS Code**: run **MCP: List Servers**, select `newrelic`, and start it. Sign in to New Relic in the browser window that opens.
 - **Copilot CLI**: run `/mcp`, select `newrelic`, and follow the sign-in prompt.
+- **Copilot app**: type `/nrsetup` and follow the prompts, or ask Copilot to "set up New Relic". Sign in to New Relic in the browser window that opens.
 
 Or run `/nrsetup` in Copilot (or just ask it to "set up New Relic") and the skill walks you through it. You can also run `/nrql` to write and run a query, and `/nrinvestigate` to investigate an incident.
 
@@ -100,7 +106,7 @@ skills/
 ## Support
 
 - Docs: https://docs.newrelic.com/docs/agentic-ai/mcp/overview/
-- Issues: https://github.com/newrelic-partners/copilot-plugin/issues
+- Issues: https://github.com/newrelic-partners/Github-Copilot-plugin/issues
 
 ## License
 
