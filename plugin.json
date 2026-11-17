@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "new-relic",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "Use New Relic directly in GitHub Copilot through the hosted New Relic MCP server. Query telemetry with NRQL, investigate errors, alerts, and deployments, and explore logs, traces, and dashboards in natural language.",
   "author": {
     "name": "New Relic",
@@ -21,6 +21,7 @@
     "alerts",
     "incidents",
     "kubernetes",
+    "kafka",
     "finops",
     "mcp"
   ],
@@ -29,7 +30,8 @@
       "skills": [
         "./skills/nrsetup/",
         "./skills/nrql/",
-        "./skills/nrinvestigate/"
+        "./skills/nrinvestigate/",
+        "./skills/kafka/"
       ]
     }
   }
